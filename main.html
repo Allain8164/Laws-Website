@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Laws and Programs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('justice.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            z-index: -1;
+        }
+
+        header {
+            background-color: #5c0000;
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .search-bar button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            border: none;
+            background-color: #005f15;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container {
+            padding: 20px;
+            padding-bottom: 80px; /* Increased padding to prevent overlap with footer */
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease, max-width 0.3s ease, max-height 0.3s ease;
+            max-width: 800px;
+            max-height: 400px;
+            margin: 20px auto; /* Added spacing between sections */
+        }
+
+        section:hover {
+            transform: scale(1.05);
+        }
+
+        section:active {
+            max-width: 90%;
+            max-height: 90%;
+            transform: scale(1);
+        }
+
+        h2 {
+            color: #800000;
+            border-bottom: 2px solid #380808;
+            padding-bottom: 5px;
+        }
+
+        .laws-list {
+            margin-top: 15px;
+        }
+
+        .laws-list p {
+            margin: 5px 0;
+            cursor: pointer;
+            color: #000000;
+        }
+
+        .laws-list p:hover {
+            text-decoration: underline;
+        }
+
+        .content-section {
+            border-radius: 15px;
+        }
+
+        footer {
+            background-color: #5c0000;
+            color: white;
+            text-align: center;
+            padding: 5px 0; 
+            bottom: 0;
+            width: 100%;
+            z-index: 10; 
+        }
+
+        .social-links img {
+            width: 25px;
+            height: 25px; 
+            margin: 0 5px; 
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <h1>Portfolio of Laws and Programs</h1>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search...">
+            <button onclick="searchContent()">Search</button>
+        </div>
+    </header>
+    <div class="container">
+        <section id="law-overview">
+            <h2><b>Law Overview</b></h2>
+            <div class="laws-list">
+                <p id="law-1987" onclick="redirectTo('law-1987.html')"><b>The 1987 Constitution (Article 13 Section 14)</b></p>
+                <p id="law-1991" onclick="redirectTo('law-1991.html')"><b>Local Government Code of 1991</b></p>
+                <p id="law-party" onclick="redirectTo('party-list-law.html')"><b>Party List Law</b></p>
+                <p id="law-labor" onclick="redirectTo('labor-code.html')"><b>Labor Code (1989)</b></p>
+                <p id="law-7192" onclick="redirectTo('law-7192.html')"><b>Women in Nation Building Law (RA 7192)</b></p>
+                <p id="law-agrarian" onclick="redirectTo('agrarian-reform.html')"><b>1988 Comprehensive Agrarian Reform Law</b></p>
+                <p id="law-7688" onclick="redirectTo('law-7688.html')"><b>RA 7688 (1994)</b></p>
+                <p id="law-7877" onclick="redirectTo('law-7877.html')"><b>Anti-Sexual Harassment Law (RA 7877)</b></p>
+                <p id="law-7822" onclick="redirectTo('law-7822.html')"><b>RA 7822 (1995)</b></p>
+                <p id="law-8353" onclick="redirectTo('law-8353.html')"><b>RA 8353 (1997)</b></p>
+                <p id="law-programs" onclick="redirectTo('national-programs.html')"><b>National Programs</b><br></p>
+                <p id="law-civil-society" onclick="redirectTo('civil-society.html')"><b>Women's Involvement in Civil Society</b></p>
+                <p id="law-ra9262" onclick="redirectTo('ra-9262.html')"><b>Violence Against Women and their Children Act (RA 9262)</b></p>
+            </div>
+        </section>
+        <section>
+            <h2>Case Scenario</h2>
+            <p>Lorem ipsum dolor sit amet. Aut similique quos a ducimus explicabo aut molestiae velit rem distinctio inventore et sequi voluptas cum quia galisum aut suscipit fugiat...</p>
+        </section>
+        <section>
+            <h2>Call to Action</h2>
+            <p><b>Steps for Raising Awareness:</b><br>
+                - Conduct barangay-level workshops on gender-based violence.<br>
+                - Partner with local schools to introduce education on gender equality and women’s rights.<br>
+                - Collaborate with media outlets for public service announcements.<br>
+                - Engage civil society groups like Gabriela and PILIPINA for grassroots advocacy campaigns.<br>
+                - Establish support groups for survivors to share experiences and access assistance.<br>
+                <br>
+                <b>Emergency Hotlines (Cebu):</b><br>
+                - Cebu City Women and Children Protection Desk: (032) 256-2191<br>
+                - Gabriela Cebu: (032) 253-6434<br>
+                - Philippine National Police (PNP) Emergency Hotline: 117 or (032) 255-1966<br>
+                - Cebu Provincial Women’s Commission: (032) 888-2328<br>
+                
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="instagram-icon.png" alt="instagram"></a>
+            <a href="https://www.universityofcebu.net/p/university-of-cebu-banilad-campus.html" target="_blank"><img src="uc-main-icon.png" alt="School"></a>
+        </div>
+        <p>&copy; Charmaine Jay Tañajura, 2024. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function searchContent() {
+            const query = document.getElementById('search').value.toLowerCase();
+            const lawElements = document.querySelectorAll('.laws-list p');
+
+            for (const law of lawElements) {
+                if (law.textContent.toLowerCase().includes(query)) {
+                    law.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    law.style.backgroundColor = '#ffeb3b';
+                    setTimeout(() => law.style.backgroundColor = '', 1500);
+                    return;
+                }
+            }
+
+            alert('No matching law found.');
+        }
+
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+
+        window.addEventListener('scroll', () => {
+            const footer = document.getElementById('footer');
+            const scrollPosition = window.innerHeight + window.scrollY;
+            const documentHeight = document.documentElement.offsetHeight;
+            footer.classList.toggle('visible', scrollPosition >= documentHeight);
+        });
+
+    </script>
+</body>
+</html>

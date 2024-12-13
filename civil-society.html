@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Involvement in Civil Society</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('justice.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            z-index: -1;
+        }
+
+        header {
+            background-color: #9c1515;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+
+        .law {
+            margin-bottom: 15px;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .law:hover {
+            background-color: #f0f8ff;
+        }
+
+        .definition {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+
+        .law.active .definition {
+            display: block;
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #ff8000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #cc6600;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <h1>Women's Involvement in Civil Society</h1>
+    </header>
+    <div class="container">
+        <h2>Click on a law to view its details:</h2>
+
+        <div class="law" onclick="toggleDefinition(this)">
+            <p><strong>The 1987 Constitution (Article 13 Section 14)</strong></p>
+            <div class="definition">
+                This law mandates the recognition and promotion of the rights of women, ensuring gender equality and participation in all aspects of society.
+            </div>
+        </div>
+
+        <div class="law" onclick="toggleDefinition(this)">
+            <p><strong>Local Government Code of 1991</strong></p>
+            <div class="definition">
+                This code provides for the integration of gender-responsive measures in local government units, ensuring women's participation in governance.
+            </div>
+        </div>
+
+        <div class="law" onclick="toggleDefinition(this)">
+            <p><strong>Party List Law</strong></p>
+            <div class="definition">
+                The Party List Law ensures women's representation in Congress by allocating party-list seats for marginalized and underrepresented groups, including women.
+            </div>
+        </div>
+
+        <div class="law" onclick="toggleDefinition(this)">
+            <p><strong>Women in Nation Building Law (RA 7192)</strong></p>
+            <div class="definition">
+                RA 7192 recognizes women's active role in nation-building and provides equal opportunities in various sectors, including education and employment.
+            </div>
+        </div>
+
+        <div class="law" onclick="toggleDefinition(this)">
+            <p><strong>Labor Code (1989)</strong></p>
+            <div class="definition">
+                The Labor Code includes provisions to ensure gender equality in the workplace, prohibit discrimination, and provide maternity benefits.
+            </div>
+        </div>
+
+        <div class="law" onclick="toggleDefinition(this)">
+            <p><strong>1988 Comprehensive Agrarian Reform Law</strong></p>
+            <div class="definition">
+                This law provides for the equal right of women to own land and participate in agrarian reform programs.
+            </div>
+        </div>
+
+        <div class="button">
+            <a href="main.html" class="back-button">Back to Overview</a>
+        </div>
+
+
+    </div>
+
+    <script>
+        function toggleDefinition(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
